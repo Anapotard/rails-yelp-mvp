@@ -68,6 +68,8 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    autoprefixer-rails (10.4.7.0)
+      execjs (~> 2)
     bindex (0.8.1)
     bootsnap (1.12.0)
       msgpack (~> 1.2)
@@ -77,9 +79,12 @@ GEM
     crass (1.0.6)
     diff-lcs (1.5.0)
     erubi (1.10.0)
+    execjs (2.8.1)
     faker (2.21.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
+    font-awesome-sass (6.1.1)
+      sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -164,16 +169,8 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.11.0)
-    sass-rails (6.0.0)
-      sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
       ffi (~> 1.9)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
     semantic_range (3.0.0)
     spring (4.0.0)
     sprockets (4.1.1)
@@ -185,7 +182,6 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.4.4)
     thor (1.2.1)
-    tilt (2.0.10)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -210,9 +206,11 @@ PLATFORMS
   arm64-darwin-20
 
 DEPENDENCIES
+  autoprefixer-rails
   bootsnap (>= 1.4.4)
   byebug
   faker
+  font-awesome-sass (~> 6.1)
   jbuilder (~> 2.7)
   listen (~> 3.3)
   puma (~> 5.0)
@@ -220,7 +218,6 @@ DEPENDENCIES
   rails (~> 6.1.6, >= 6.1.6.1)
   rails-controller-testing
   rspec-rails
-  sass-rails (>= 6)
   simple_form!
   spring
   sqlite3 (~> 1.4)
