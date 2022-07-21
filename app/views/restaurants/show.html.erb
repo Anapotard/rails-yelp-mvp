@@ -6,3 +6,5 @@
 <%= @restaurant.category %>
 <br><br><br>
 <%= link_to 'Leave a review', new_restaurant_path(@restaurant) %>
+<br><br><br>
+<%= link_to "Delete #{@restaurant.name}", restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure"} %>
